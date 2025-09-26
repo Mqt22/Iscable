@@ -160,11 +160,20 @@ header>.hamburger {
     width: 209px;
     height: 117px;
     transform: rotate(-13.464deg);
-    top: 55%;
-    right: 60px;
+    top: 75%;
+    right: 0px;
     filter: blur(2px);
 }
 
+.hero>.hero-img-6 {
+    position: absolute;
+    width: 209px;
+    height: 117px;
+    transform: rotate(-13.464deg);
+    top: 90%;
+    left: 0px;
+    filter: blur(2px);
+}
 /* Ends here Below starts the main content css */
 
 .hero>.top-hero,
@@ -340,6 +349,13 @@ header>.hamburger {
         height: 60px;
     }
 
+    .hero>.hero-img-5 {
+        top: 39%;
+        right: -30px;
+        width: 80px;
+        height: 80px;
+    }
+
     .top-hero>.top-hero-p {
         font-size: 10px;
         max-width: 200px;
@@ -449,6 +465,13 @@ header>.hamburger {
         height: 70px;
     }
 
+    .hero>.hero-img-5 {
+        top: 39%;
+        right: -30px;
+        width: 80px;
+        height: 80px;
+    }
+
     .top-hero>.top-hero-p {
         font-size: 12px;
         max-width: 250px;
@@ -478,6 +501,10 @@ header>.hamburger {
 }
 
 @media only screen and (min-width: 377px) and (max-width: 426px) {
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         max-width: 400px;
     }
@@ -554,6 +581,13 @@ header>.hamburger {
 
     .hero>.hero-img-4 {
         top: 30%;
+        width: 100px;
+        height: 70px;
+    }
+
+    .hero>.hero-img-5 {
+        top: 42%;
+        right: -30px;
         width: 100px;
         height: 70px;
     }
@@ -668,6 +702,13 @@ header>.hamburger {
         height: 90px;
     }
 
+    .hero>.hero-img-5 {
+        top: 42%;
+        right: -30px;
+        width: 150px;
+        height: 90px;
+    }
+
     .top-hero>.top-hero-p {
         font-size: 16px;
         max-width: 350px;
@@ -741,6 +782,11 @@ header>.hamburger {
         height: 120px;
     }
 
+    .hero>.hero-img-5 {
+        top: 45%;
+        right: -40px;
+    }
+
     .top-hero>.top-hero-p {
         font-size: 20px;
     }
@@ -807,6 +853,11 @@ header>.hamburger {
         top: 36%;
         width: 250px;
         height: 150px;
+    }
+
+    .hero>.hero-img-5 {
+        top: 50%;
+        right: -30px;
     }
 
     .top-hero>.top-hero-cta {
@@ -890,6 +941,16 @@ header>.hamburger {
         transform: rotate(-13.464deg);
         top: 55%;
         right: 60px;
+        filter: blur(2px);
+    }
+
+    .hero>.hero-img-6 {
+        position: absolute;
+        width: 209px;
+        height: 117px;
+        transform: rotate(-13.464deg);
+        top: 70%;
+        left: 60px;
         filter: blur(2px);
     }
 }
