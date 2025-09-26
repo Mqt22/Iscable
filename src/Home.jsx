@@ -21,46 +21,10 @@ const Home = () => {
     useEffect(() => {
         const tl = gsap.timeline();
         tl.fromTo(
-            img1.current,
-            { y: 1000, opacity: 0 },   // starting state (relative to your CSS)
-            { y: 0, opacity: 1, duration: 0.5}
+            [img1.current, img2.current, img3.current, img4.current, img5.current],
+            { y: 1000, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.4, stagger: 0.1 } // each starts 0.1s after the previous
         );
-        tl.fromTo(
-            img2.current,
-            {
-                y: 1000, opacity: 0
-            },
-            {
-                y: 0, duration: 1, opacity: 0.5 
-            }
-        )
-        tl.fromTo(
-            img3.current,
-            {
-                y: 1000, opacity: 0
-            },
-            {
-                y: 0, duration: 1, opacity: 0.5
-            }
-        )
-        tl.fromTo(
-            img4.current,
-            {
-                y: 1000, opacity: 0
-            },
-            {
-                y: 0, duration: 1, opacity: 0.5
-            }
-        )
-        tl.fromTo(
-            img5.current,
-            {
-                y: 1000, opacity: 0
-            },
-            {
-                y: 0, duration: 1, opacity: 0.5
-            }
-        )
     }, [])
     const toggleMenu = () => {
         setOpen(!open);
@@ -86,8 +50,8 @@ const Home = () => {
                 <img src={second_img} alt="" className='hero-img-2' ref={img2} />
                 <img src={third_img} alt="" className='hero-img-3' ref={img3} />
                 <img src={fourth_img} alt="" className='hero-img-4' ref={img4} />
-                <img src={fifth_img} alt="" className='hero-img-5' ref={img5}/>
-                <img src={sixth_img} alt="" className='hero-img-6'/>
+                <img src={fifth_img} alt="" className='hero-img-5' ref={img5} />
+                <img src={sixth_img} alt="" className='hero-img-6' />
                 {/* Ends here below is the main content */}
                 <div className="top-hero">
                     <h5 className='top-hero-h5'>We don’t just push send...</h5>
