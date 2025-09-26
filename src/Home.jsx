@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Css/Home.css'
-import logo from './assets/iscable.svg'
+import logo from './assets/Iscable.svg'
 import first_img from './assets/img3.png'
 import second_img from './assets/img6.png'
 import third_img from './assets/img1.png'
