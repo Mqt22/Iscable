@@ -23,7 +23,7 @@ const Home = () => {
         tl.fromTo(
             [img1.current, img2.current, img3.current, img4.current, img5.current],
             { y: 1000, opacity: 0 },
-            { y: 0, opacity: 1, duration: 0.4, stagger: 0.1 } // each starts 0.1s after the previous
+            { y: 0, opacity: 1, duration:1, stagger: 0.1 } // each starts 0.1s after the previous
         );
     }, [])
     const toggleMenu = () => {
