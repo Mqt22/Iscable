@@ -23,7 +23,7 @@ const Home = () => {
         tl.fromTo(
             img1.current,
             { y: 1000, opacity: 0 },   // starting state (relative to your CSS)
-            { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }
+            { y: 0, opacity: 1, duration: 0.5}
         );
         tl.fromTo(
             img2.current,
@@ -31,7 +31,7 @@ const Home = () => {
                 y: 1000, opacity: 0
             },
             {
-                y: 0, duration: 1, opacity: 0.5, ease: "power2.out"
+                y: 0, duration: 1, opacity: 0.5 
             }
         )
         tl.fromTo(
@@ -40,7 +40,7 @@ const Home = () => {
                 y: 1000, opacity: 0
             },
             {
-                y: 0, duration: 1, opacity: 0.5, ease: "power2.out"
+                y: 0, duration: 1, opacity: 0.5
             }
         )
         tl.fromTo(
@@ -49,7 +49,7 @@ const Home = () => {
                 y: 1000, opacity: 0
             },
             {
-                y: 0, duration: 1, opacity: 0.5, ease: "power2.out"
+                y: 0, duration: 1, opacity: 0.5
             }
         )
         tl.fromTo(
@@ -58,7 +58,7 @@ const Home = () => {
                 y: 1000, opacity: 0
             },
             {
-                y: 0, duration: 1, opacity: 0.5, ease: "power2.out"
+                y: 0, duration: 1, opacity: 0.5
             }
         )
     }, [])
